@@ -1,10 +1,13 @@
-.form-motivations{
-    border: 1px solid;
-    padding: 10px;
-    width:500px;
+.form-motivations {
+  border: 1px solid;
+  padding: 10px;
+  width: 500px;
 }
 .textbox-motivations {
-    width: 90%;           /* Largeur de la boîte */
-    height: 150px;         /* Hauteur de la boîte */
-    padding: 5px;          /* Espace entre le texte et les bords */
+  width: 90%; /* Largeur de la boîte */
+  height: 150px; /* Hauteur de la boîte */
+  padding: 5px; /* Espace entre le texte et les bords */
+}
+.avertissement-rouge {
+    color: red;
 }

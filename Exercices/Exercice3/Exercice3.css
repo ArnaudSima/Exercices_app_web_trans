@@ -1,13 +1,44 @@
-.valider-et-modifier{
-    display: inline-flex;
-}
+
 .bouton-appuyer{
     height: 25px;
     margin-top: 13px ;
     margin-left: 10px;
 }
 .textbox{
-    align-items:center;
-    margin-left: 50px;
-    margin-top: 10px;
+    left: 120px;
+    margin-top:10px;
+    margin-left: 5px;
+    
 }
+.text-rouge{
+    border-style: solid;
+    border-color: red;
+}
+
+#etoile{
+    color: red;
+}
+
+.etoile-nom{
+    display: flex;
+    align-items: center;
+}
+.etoile-prenom{
+    display: flex;
+    align-items: center;
+}
+.etoile-telephone{
+    display: flex;
+    align-items: center;
+}
+.etoile-courriel{
+    display: flex;
+    align-items: center;
+}
+.taille-invisible{
+    font-size: 0;
+}
+.valider-et-appuyer{
+    display: flex;
+}
+
