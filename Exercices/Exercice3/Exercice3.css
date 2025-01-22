@@ -1,0 +1,13 @@
+.valider-et-modifier{
+    display: inline-flex;
+}
+.bouton-appuyer{
+    height: 25px;
+    margin-top: 13px ;
+    margin-left: 10px;
+}
+.textbox{
+    align-items:center;
+    margin-left: 50px;
+    margin-top: 10px;
+}
