@@ -11,25 +11,24 @@ var avertissement = document.getElementById("avertissement");
 var message = document.getElementById("message");
 const phonePattern = new RegExp(textTelephone.pattern);
 function BoutonAppuyer() {
-    if (textNom.value != "" && textPrenom.value != "" && textCourriel.value != "")
-    {
-        avertissement.classList.add("taille-invisible");
-        if ()
-          message.innerText = `Bonjour ${textNom.value}${textPrenom}, nous vous repondrons
+  if (
+    textNom.value != "" &&
+    textPrenom.value != "" &&
+    textCourriel.value != ""
+  ) {
+    avertissement.classList.add("taille-invisible");
+    message.innerText = `Bonjour ${textNom.value}${textPrenom}, nous vous repondrons
         par courriel `;
-    }else
-    {
-
-        avertissement.classList.remove("taille-invisible");
-        if (textNom.value === "") {
-          textNom.classList.add("text-rouge");
-        }
-        if (textPrenom.value === "") {
-          textPrenom.classList.add("text-rouge");
-        }
-        if (textCourriel.value === "") {
-          textCourriel.classList.add("text-rouge");
-        }
+  } else {
+    avertissement.classList.remove("taille-invisible");
+    if (textNom.value === "") {
+      textNom.classList.add("text-rouge");
     }
-      
+    if (textPrenom.value === "") {
+      textPrenom.classList.add("text-rouge");
+    }
+    if (textCourriel.value === "") {
+      textCourriel.classList.add("text-rouge");
+    }
+  }
 }

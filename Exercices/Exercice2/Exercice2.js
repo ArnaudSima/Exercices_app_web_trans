@@ -12,7 +12,6 @@ boutonAppuyer.addEventListener("click", () => {
     messageAvertissement.innerText =
       "SVP choisir un poste dans la liste ici-haut.";
       comboboxChoix.classList.add("avertissement-rouge");
-      //document.getElementById("avertissement-rouge").innerHTML.styles.color = "red";
   }else{
           comboboxChoix.classList.remove("avertissement-rouge");
           infoPersonnelles.innerText += `${programmeur.value},${textboxMotivations.value}`;
