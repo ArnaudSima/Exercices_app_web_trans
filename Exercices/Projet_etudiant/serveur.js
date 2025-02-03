@@ -59,7 +59,7 @@ app.get("/", (req, res) => {
  con.query("SELECT * FROM e_events ORDER BY e_start_date DESC",
     (err,result) => {
     if(err) throw err;
-    res.render("pages/index.ejs", {
+    res.render("pages/ajouter-evenement.ejs", {
         siteTitle: "Application simple",
         pageTitle: "Liste d'evenements",
         items: result
