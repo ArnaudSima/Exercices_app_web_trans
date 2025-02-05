@@ -1,3 +1,19 @@
 <%- include ("../partials/header.ejs") %>
-<a href="event/add" class="btn btn-success">Ajouter evenement</a>
-<%- include("../partials/footer.ejs") %>
+<div class="container-fluid">
+  <a href="event/add" class="btn btn-success">Ajouter evenement</a>
+  <div class="row">
+    <div class="col-1">ID</div>
+    <div class="col-4">Nom</div>
+    <div class="col-2">Description</div>
+    <div class="col-2">Location</div>
+    <div class="col-2 align-content-center">Actions</div>
+  </div>
+  <% items.forEach(function(item, index) { %>
+
+  <div class="row">
+    <div class="col-1"><%= item.E_ID %></div>
+    <div class="col-4"><%= item.E_NAME %></div>
+  </div>
+
+  <% }); %> <%- include("../partials/footer.ejs") %>
+</div>
