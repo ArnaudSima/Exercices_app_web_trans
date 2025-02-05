@@ -59,11 +59,33 @@ app.get("/", (req, res) => {
  con.query("SELECT * FROM e_events ORDER BY e_start_date DESC",
     (err,result) => {
     if(err) throw err;
-    res.render("pages/ajouter-evenement.ejs", {
+    res.render("pages/index.ejs", {
         siteTitle: "Application simple",
         pageTitle: "Liste d'evenements",
         items: result
 
     });
  });
+});
+app.post("/event/edit/:id", function(req,res){
+    const requete ="UPDATE e_events SET e_name = ?, e_start_date = ?, e_start_end = ?,e_desc =?, e_location = ? WHERE e_id = ?";
+    const parametres = [
+        req.body.e_name,
+        req.body.e_start_date,
+        req.body.e_end_date,
+        req.body.e_desc,
+        req.body.e_location,
+        req.body.e_id
+    ];
+    con.query(requete, parametres,function(err,result){
+        if(err) throw err;
+        res.redirect("/");
+    });
+});
+app.get("/event/delete/:id", function(req,res){
+    const requete = "DELETE FROM e_event WHERE e_id = ?";
+    con.query(requete,[req.params.id], function(err, result){
+        if (err) throw err;
+        res.redirect("/");
+    });
 });
